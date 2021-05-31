@@ -73,13 +73,20 @@ if($reset>0)
             </li>
         </ul>
     </header>
+    <div class="new">
         <?php   foreach($return['informationList']['data'] as $key => $value) {?>
             <div class="new_item">
                 <a href="<?php echo $config['site_url']; ?>/detail/<?php echo $value['id'];?>">
                     <p class="title"><?php echo $value['title'];?></p>
                     <div class="new_item_div">
                         <div class="left">
+                            <?php if($value['type']==7){?>
+                                <div class="video">
+                                    <img src="<?php echo $value['logo'];?>" alt="<?php echo $value['title'];?>">
+                                </div>
+                            <?php }else{?>
                             <p class="description"><?php echo $value['content'];?></p>
+                            <?php }?>
                             <div class="others">
                                 <div class="chakan">
                                     <img src="<?php echo $config['site_url'];?>/images/eye.png" alt="">
@@ -88,16 +95,20 @@ if($reset>0)
                                 <span><?php echo date("Y-m-d",strtotime($value['create_time']));?></span>
                             </div>
                         </div>
+                        <?php if($value['type']!=7){?>
                         <div class="new_item_img">
                             <img src="<?php echo $value['logo'];?>" alt="<?php echo $value['title'];?>" class="imgauto">
                         </div>
+                        <?php }?>
                     </div>
                 </a>
             </div>
         <?php }?>
-    <div class="paging">
-    <?php render_page_pagination($return['informationList']['count'],$info['page']['page_size'],$page,$config['site_url']."/newslist"); ?>
+        <div class="paging">
+            <?php render_page_pagination($return['informationList']['count'],$info['page']['page_size'],$page,$config['site_url']."/newslist"); ?>
+        </div>
     </div>
+
     <footer>
         <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="download">立即下载</a>
     </footer>
