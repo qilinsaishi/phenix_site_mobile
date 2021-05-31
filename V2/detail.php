@@ -61,6 +61,11 @@ if(isset($return["information"]['data']['redirect']) && $return["information"]['
                     最新活动
                 </a>
             </li>
+            <li>
+                <a href="<?php echo $config['site_url'];?>/aboutus">
+                    关于我们
+                </a>
+            </li>
         </ul>
     </header>
     <div class="new new_detail">

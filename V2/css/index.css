@@ -58,7 +58,7 @@ header{
     width:.88rem;
     height: .88rem;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 .nav li a{
     font-size: .36rem;
@@ -296,12 +296,12 @@ header{
     margin-left: .12rem;
 }
 .watch_match_bot .team_name{
-font-size: .26rem;
-color: #333;
-width: 1.6rem;
-overflow:hidden;
-text-overflow:ellipsis;
-white-space: nowrap
+    font-size: .26rem;
+    color: #333;
+    width: 1.6rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap
 }
 .watch_match_bot .team_name.tl{
     text-align: left;
@@ -407,8 +407,8 @@ footer{
     text-overflow:ellipsis;
     white-space: nowrap;
     margin-bottom: .24rem;
-    height: .32rem;
-    line-height: .32rem;
+    height: .4rem;
+    line-height: .4rem;
 }
 .new_item_div{
     display: flex;
@@ -441,6 +441,10 @@ footer{
     -webkit-box-orient: vertical;
     flex-shrink:0;
 }
+.new_item p.description *{
+    font-size: .26rem;
+    color: #454545;
+}
 .new_item .others{
     display: flex;
     justify-content: space-between;
@@ -467,8 +471,8 @@ footer{
     padding-top: .3rem;
 }
 .new_detail .others{
-   border-bottom: .02rem solid #eee;
-   padding: 0 .3rem .3rem .3rem;
+    border-bottom: .02rem solid #eee;
+    padding: 0 .3rem .3rem .3rem;
 }
 .new_detail p.title{
     padding: 0 .3rem;
@@ -485,6 +489,10 @@ footer{
     line-height: .36rem;
     margin-bottom: .3rem;
 }
+.new_detail_div *{
+    font-size: .26rem;
+    color: #454545;
+}
 .new_detail_div img{
     width: 100%;
     display: block;
@@ -497,15 +505,17 @@ footer{
     padding-top: 1.2rem;
     background: #F7F8F8;
     min-height:100%;
+    padding-bottom: 1rem;
 }
 .activity{
     width: 6.9rem;
     height: 4.24rem;
-    margin:0 auto ; 
+    margin:0 auto ;
     background: #fff;
     box-shadow: 0px 0px .16rem 0px rgba(143, 23, 22, 0.05);
     border-radius: .16rem;
     margin-bottom: .3rem;
+    overflow: hidden;
 }
 .activity .img{
     width: 6.9rem;
@@ -543,7 +553,7 @@ footer{
 .activity_p{
     font-size: .26rem;
     color: #666;
-    text-align: center;
+    /* text-align: center; */
     padding: 0 .3rem;
 }
 /* 活动 */
@@ -585,12 +595,13 @@ footer{
     height: .34rem;
     vertical-align: middle;
     margin-right: .12rem;
+    margin-top: .03rem;
 }
 .about1_p i{
     font-size: .24rem;
     color: #E94645;
-    height: .46rem;
-    line-height: .46rem;
+    height: .24rem;
+    line-height: .24rem;
     vertical-align: middle;
     font-style: normal;
 }
@@ -602,6 +613,8 @@ footer{
     font-size: .26rem;
     line-height: .38rem;
     color: #333;
+    text-align: justify;
+    word-break: break-all;
 }
 .yinhao_left{
     margin-bottom: .18rem;
@@ -639,7 +652,7 @@ footer{
 .about2_ul li a{
     display: flex;
     flex-direction: column;
-   
+
 }
 .about2_ul li a span{
     font-size: .26rem;
@@ -689,6 +702,9 @@ footer{
 .fenxi img{
     width: .38rem;
     height: .36rem;
+}
+.fenxi img:nth-last-child(1){
+    transform: rotateY(180deg);
 }
 .fenxi span{
     font-size: .28rem;
