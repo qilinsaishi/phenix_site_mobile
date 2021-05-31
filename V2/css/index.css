@@ -58,7 +58,7 @@ header{
     width:.88rem;
     height: .88rem;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .nav li a{
     font-size: .36rem;
@@ -296,12 +296,12 @@ header{
     margin-left: .12rem;
 }
 .watch_match_bot .team_name{
-    font-size: .26rem;
-    color: #333;
-    width: 1.6rem;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap
+font-size: .26rem;
+color: #333;
+width: 1.6rem;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space: nowrap
 }
 .watch_match_bot .team_name.tl{
     text-align: left;
@@ -392,7 +392,7 @@ footer{
     margin: 0 auto;
 }
 .new_item{
-    height: 2.4rem;
+    padding-bottom: .2rem;
     width: 100%;
     border-bottom: .02rem solid #eee;
     padding-top: .3rem;
@@ -459,6 +459,93 @@ footer{
     height: .18rem;
     margin-right: .1rem;
 }
+.video {
+    width: 6.9rem;
+    height: 3rem;
+    margin-top: .3rem;
+}
+.video img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.paging{
+    padding: .3rem;
+}
+/* 分页 */
+.paging{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paging_pre img{
+    width: 34px;
+    height: 34px;
+    display: none;
+}
+.paging_pre{
+    margin-right: 4px;
+    width: 34px;
+    height: 34px;
+}
+.paging_next img{
+    width: 34px;
+    height: 34px;
+    display: none;
+}
+.paging_pre img.active,.paging_next img.active{
+    display: block;
+}
+.img_transform{
+    transform: rotate(180deg);
+}
+.paging a{
+    float: left;
+    border-radius: .04rem;
+}
+.paging .paging_num{
+    width: .68rem;
+    height: .68rem;
+    background: #FFFFFF;
+    border: .01rem solid #EEEEEE;
+    border-radius: .04rem;
+    font-size: .26rem;
+    color: #333;
+    text-align: center;
+    line-height: .68rem;
+    margin-right: .08rem;
+}
+.paging .paging_num.active{
+    background: #FF6649;
+    color: #fff;
+}
+.paging_pre,.paging_next{
+    width: .68rem;
+    height: .68rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paging_pre img{
+    width: .28rem;
+    height: .4rem;
+}
+.paging .more img{
+    width: .4rem;
+    height: .08rem;
+    margin: 0 .24rem;
+}
+.paging_next img{
+    width: .28rem;
+    height: .4rem;
+}
+.paging_next.active,.paging_pre.active{
+border: .01rem solid #FA8E69;
+}
+/* 分页 */
 /* 最新资讯 */
 /* 最新资讯详情页 */
 .new_detail{
@@ -471,8 +558,8 @@ footer{
     padding-top: .3rem;
 }
 .new_detail .others{
-    border-bottom: .02rem solid #eee;
-    padding: 0 .3rem .3rem .3rem;
+   border-bottom: .02rem solid #eee;
+   padding: 0 .3rem .3rem .3rem;
 }
 .new_detail p.title{
     padding: 0 .3rem;
@@ -510,7 +597,7 @@ footer{
 .activity{
     width: 6.9rem;
     height: 4.24rem;
-    margin:0 auto ;
+    margin:0 auto ; 
     background: #fff;
     box-shadow: 0px 0px .16rem 0px rgba(143, 23, 22, 0.05);
     border-radius: .16rem;
@@ -652,7 +739,7 @@ footer{
 .about2_ul li a{
     display: flex;
     flex-direction: column;
-
+   
 }
 .about2_ul li a span{
     font-size: .26rem;
@@ -776,5 +863,110 @@ footer{
 }
 .about4 .weixin{
     margin: 0 .6rem;
+}
+
+.mip-fill-content .wechat-model-layer {
+    width: 4.5rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .21rem;
+    position: relative;
+    background: #fff;
+    border-radius: .1rem;
+    box-shadow: 0px 0px .16rem 0px rgba(143, 23, 22, 0.5);
+}
+
+.mip-fill-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+.mip-sjh-wechat-model {
+    display: block;
+    position: fixed;
+    z-index: 10001;
+    top: 35%;
+    right: 0px;
+    left: 0px;
+    transition: opacity 0.1s ease-in 0s;
+    display: none;
+}
+
+.mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .image .wechat_success_logo {
+    width: .46rem;
+    height: .46rem;
+    margin-bottom: .2rem;
+}
+
+.mip-sjh-wechat-model .title {
+    font-size: 0.24rem;
+    color: #333;
+    margin-bottom: .12rem;
+    height: .24rem;
+    line-height: .24rem;
+}
+
+.mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .wechat-number {
+    color: #333;
+    font-size: .24rem;
+}
+
+.mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .desc {
+    color: #333;
+    font-size: .24rem;
+}
+
+.mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .knowButton {
+    background-color: #1aad19;
+    border-radius: .05rem;
+    width: 2.53rem;
+    height: .57rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: .16rem;
+    cursor: pointer;
+}
+
+.mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .knowButton span {
+    color: #fff;
+    font-size: .24rem;
+}
+
+.show {
+    cursor: pointer;
+}
+
+.mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .close {
+    position: absolute;
+    right: .16rem;
+    top: .16rem;
+    width: .32rem;
+    height: .32rem;
+    cursor: pointer;
 }
 /* 关于我们 */

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include_once ("web.php");
 $reset = $_GET['reset']??0;
-$info['page']['page_size'] = 5;
+$info['page']['page_size'] = 3;
 $page = $_GET['page']??1;
 if($page==''){
 $page=1;
@@ -94,8 +94,9 @@ if($reset>0)
                     </div>
                 </a>
             </div>
-
         <?php }?>
+    <div class="paging">
+    <?php render_page_pagination($return['informationList']['count'],$info['page']['page_size'],$page,$config['site_url']."/newslist"); ?>
     </div>
     <footer>
         <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="download">立即下载</a>
