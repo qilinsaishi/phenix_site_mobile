@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include_once ("web.php");
 $reset = $_GET['reset']??0;
-$info['page']['page_size'] = 3;
+$info['page']['page_size'] = 10;
 $page = $_GET['page']??1;
 if($page==''){
 $page=1;

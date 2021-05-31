@@ -170,8 +170,8 @@ $return = curl_post(json_encode($params),1);
             <a href="<?php echo $return['defaultConfig']['data']['weibo_url']['value'];?>">
                 <img src="<?php echo $config['site_url'];?>/images/weibo.png" alt="微博">
             </a>
-            <a href="<?php echo $return['defaultConfig']['data']['wechat']['value'];?>" class="weixin">
-                <img src="<?php echo $config['site_url'];?>/images/weixin.png" alt="微信账号">
+            <a href="" onclick="copyText()" class="weixin  click show">
+                <img src="<?php echo $config['site_url'];?>/images/weixin.png" alt="微信账号:<?php echo $return['defaultConfig']['data']['wechat']['value'];?>">
             </a>
             <a href="<?php echo $return['defaultConfig']['data']['baijia_url']['value'];?>">
                 <img src="<?php echo $config['site_url'];?>/images/baijiahao.png" alt="百家号">
@@ -181,6 +181,21 @@ $return = curl_post(json_encode($params),1);
     <footer>
         <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="download">立即下载</a>
     </footer>
+    <div class="mip-sjh-wechat-model">
+        <div class="mip-fill-content">
+            <div class="wechat-model-layer">
+                <img class="iconguanbi close" src="<?php echo $config['site_url'];?>/images/plus.png" />
+                <div class="wechat-model-success">
+                    <div class="image">
+                        <img src="<?php echo $config['site_url'];?>/images/wechat_success_icon.png"
+                             class="wechat_success_logo">
+                    </div>
+                    <div class="title">复制成功</div>
+                    <div class="desc">添加微信好友, 领取福利</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="<?php echo $config['site_url'];?>/js/zepto.js"></script>
     <script>
         $("body").on("click", '#menu', function () {
@@ -197,6 +212,28 @@ $return = curl_post(json_encode($params),1);
             $(this).addClass("active");
             $(this).parents(".watch").find(".watch_content").find(".watch_item").removeClass("active").eq($(this).index()).addClass("active");
         })
+
+        function copyText() {
+            const input = document.createElement('input')
+            document.body.appendChild(input)
+            input.setAttribute('value', "<?php echo $return['defaultConfig']['data']['wechat']['value'];?>")
+            input.select()
+            if (document.execCommand('copy')) {
+                document.execCommand('copy')
+            }
+            document.body.removeChild(input);
+        }
+
+
+        $(".close,.knowButton").click(function () {
+            $(".mip-sjh-wechat-model").hide();
+        })
+
+        $(".show").click(function () {
+            $(".mip-sjh-wechat-model").show();
+        })
+
+
     </script>
 </body>
 
