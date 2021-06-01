@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include_once ("web.php");
 $params = [
-    "defaultConfig"=>["keys"=>["ios_url","android_url","contact_type","contact_content","copy_text"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
+    "defaultConfig"=>["keys"=>["ios_download_url","android_url","contact_type","contact_content","copy_text"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
 ];
 $return = curl_post(json_encode($params),1);
 ?>
@@ -83,7 +83,7 @@ $return = curl_post(json_encode($params),1);
         <div class="index_bot">
             <div class="btn">
                 <a href="<?php echo $return['defaultConfig']['data']['android_url']['value'];?>" class="android">安卓版下载</a>
-                <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="ios">IOS版下载</a>
+                <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="ios">IOS版下载</a>
             </div>
             <div class="copyright">
                 <p class="copyright">

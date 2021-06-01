@@ -2,7 +2,7 @@
 <?php include_once ("web.php");
 $id = $_GET['id']??1;
 $data = [
-    "defaultConfig"=>["keys"=>["ios_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
+    "defaultConfig"=>["keys"=>["ios_download_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
     "information"=>[$id],
 ];
 $return = curl_post(json_encode($data),1);
@@ -87,7 +87,7 @@ if(isset($return["information"]['data']['redirect']) && $return["information"]['
 
     </div>
     <footer>
-        <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="download">立即下载</a>
+        <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="download">立即下载</a>
     </footer>
     <script src="<?php echo $config['site_url'];?>/js/zepto.js"></script>
     <script>

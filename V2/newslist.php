@@ -7,7 +7,7 @@ if($page==''){
 $page=1;
 }
 $params = [
-    "defaultConfig"=>["keys"=>["ios_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
+    "defaultConfig"=>["keys"=>["ios_download_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
     "informationList"=>["page"=>$page,"site"=>1,"page_size"=>$info['page']['page_size'],"type"=>"1,2,3,5,6,7","fields"=>"*","reset"=>intval($reset)],
 ];
 $return = curl_post(json_encode($params),1);
@@ -110,7 +110,7 @@ if($reset>0)
     </div>
 
     <footer>
-        <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="download">立即下载</a>
+        <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="download">立即下载</a>
     </footer>
     <script src="<?php echo $config['site_url'];?>/js/zepto.js"></script>
     <script>

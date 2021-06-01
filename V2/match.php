@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include_once ("web.php");
 $params = [
-    "defaultConfig"=>["keys"=>["ios_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
+    "defaultConfig"=>["keys"=>["ios_download_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
 ];
 $startDate = date("Y-m-d",time()-10*86400);
 $endDate = date("Y-m-d",time()+3*86400);

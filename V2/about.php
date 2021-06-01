@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include_once ("web.php");
 $params = [
-    "defaultConfig"=>["keys"=>["ios_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
+    "defaultConfig"=>["keys"=>["ios_download_url","android_url","weibo_url","baijia_url","wechat"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
 ];
 $return = curl_post(json_encode($params),1);
 ?>
@@ -179,7 +179,7 @@ $return = curl_post(json_encode($params),1);
         </div>
     </div>
     <footer>
-        <a href="<?php echo $return['defaultConfig']['data']['ios_url']['value'];?>" class="download">立即下载</a>
+        <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="download">立即下载</a>
     </footer>
     <div class="mip-sjh-wechat-model">
         <div class="mip-fill-content">
