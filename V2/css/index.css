@@ -581,6 +581,7 @@ border: .01rem solid #FA8E69;
     color: #454545!important;
 }
 .new_detail_div img{
+    height: auto;
     width: 100%;
     display: block;
     margin: 0 auto;
