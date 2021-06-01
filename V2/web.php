@@ -3,7 +3,9 @@ $config = [
     "site_url" => "https://m.kiringames.cn",
     "site_id" => 2,
     'site_name'=>"凤凰电竞",
+    'game'=>['kpl'=>'王者荣耀','lol'=>'英雄联盟','dota2'=>'DOTA2']
 ];
+header("Access-Control-Allow-Origin: ".$config['site_url']);
 function renderCertification()
 {
     echo '<a href="https://beian.miit.gov.cn/#/Integrated/index/">琼ICP备19001306号-5</a>';
@@ -117,4 +119,25 @@ function render_page_pagination($total_count,$page_size,$current_page,$url)
     {
         echo '<a href="'.$url."/".($current_page+1).'" class="paging_next"><img src="'.$domain.'/images/right.png" alt="" class="active "></a>';
     }
+}
+function generateMatchStatus($start_time)
+{
+    $currentTime = time();
+    $start_time = strtotime($start_time);
+    if($currentTime<$start_time)
+    {
+        $match_status = "未开始";
+        $color = "red";
+    }
+    elseif(($currentTime-$start_time)<=3*3600)
+    {
+        $match_status = "进行中";
+        $color = "blue";
+    }
+    else
+    {
+        $match_status = "已结束";
+        $color = "grey";
+    }
+    return ['text'=>$match_status,'color'=>$color];
 }
