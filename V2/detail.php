@@ -28,7 +28,6 @@ if(isset($return["information"]['data']['redirect']) && $return["information"]['
         <div class="logo">
             <img src="<?php echo $config['site_url'];?>/images/logo.png" alt="" class="logo_img">
             <span class="logo_title">凤凰电竞</span>
-            <i class="dot"></i>
             <span class="logo_title"></span>
         </div>
         <div id='menu'>
