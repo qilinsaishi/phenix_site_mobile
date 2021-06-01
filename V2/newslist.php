@@ -85,19 +85,27 @@ if($reset>0)
                     <p class="title"><?php echo $value['title'];?></p>
                     <div class="new_item_div">
                         <div class="left">
-                            <div class="others">
-                                <div class="chakan">
-                                    <img src="<?php echo $config['site_url'];?>/images/eye.png" alt="">
-                                    <span><?php echo $value['views'];?></span>
-                                </div>
-                                <span><?php echo date("Y-m-d",strtotime($value['create_time']));?></span>
-                            </div>
+
                             <?php if($value['type']==7){?>
+                                <div class="others">
+                                    <div class="chakan">
+                                        <img src="<?php echo $config['site_url'];?>/images/eye.png" alt="">
+                                        <span><?php echo $value['views'];?></span>
+                                    </div>
+                                    <span><?php echo date("Y-m-d",strtotime($value['create_time']));?></span>
+                                </div>
                                 <div class="video">
                                     <img src="<?php echo $value['logo'];?>" alt="<?php echo $value['title'];?>">
                                 </div>
                             <?php }else{?>
                             <p class="description"><?php echo $value['content'];?></p>
+                                <div class="others">
+                                    <div class="chakan">
+                                        <img src="<?php echo $config['site_url'];?>/images/eye.png" alt="">
+                                        <span><?php echo $value['views'];?></span>
+                                    </div>
+                                    <span><?php echo date("Y-m-d",strtotime($value['create_time']));?></span>
+                                </div>
                             <?php }?>
 
                         </div>
