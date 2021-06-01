@@ -63,6 +63,15 @@ $return = curl_post(json_encode($params),1);
                 </a>
             </li>
         </ul>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b8e1298a4ba636e4f0e189efaa2412ac";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
     </header>
     <div class="activities">
         <a href="http://efs-h5.kiringames.cn/account/charging?id=fe31d1494a53caf5d7ffac375f309e69&navber=0">
