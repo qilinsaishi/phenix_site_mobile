@@ -53,7 +53,7 @@ $return = curl_post(json_encode($params),1);
                     看比赛
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="<?php echo $config['site_url'];?>/newslist">
                     最新资讯
                 </a>

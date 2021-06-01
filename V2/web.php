@@ -42,7 +42,7 @@ function renderDetail301($config,$redirect)
 function render_page_pagination($total_count,$page_size,$current_page,$url)
 {
     $domain='http://'.$_SERVER['SERVER_NAME'];
-    $p = 1;
+    $p = 3;
     $p2 = 2;
     $totalPage = ceil($total_count/$page_size);
     if($current_page>1)
