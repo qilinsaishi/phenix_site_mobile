@@ -574,11 +574,11 @@ border: .01rem solid #FA8E69;
     font-size: .26rem;
     color: #454545;
     line-height: .36rem;
-    margin-bottom: .3rem;
+    /* margin-bottom: .3rem; */
 }
 .new_detail_div *{
     font-size: .26rem;
-    color: #454545;
+    color: #454545!important;
 }
 .new_detail_div img{
     width: 100%;
@@ -972,4 +972,9 @@ border: .01rem solid #FA8E69;
 /* 关于我们 */
 input{
     font-size: .2rem;
+}
+.about1_div .logo4{
+    width: 1.72rem;
+    height: .46rem;
+    vertical-align: middle;
 }
