@@ -10,7 +10,6 @@ $return = curl_post(json_encode($params),1);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
     <title><?php echo $config['site_name'];?>-专业电竞赛事比分分析大数据平台</title>
     <meta name="description" content="<?php echo $config['site_name'];?>，专注于电竞比分、电竞赛事数据，平台囊括英雄联盟(LOL)赛事、DOTA2比赛、CSGO赛事、王者荣耀比赛等电子竞技赛程、比分、结果等数据，了解电竞赛事数据，尽在<?php echo $config['site_name'];?>。">
     <meta name=”Keywords” Content=”电竞赛事,电竞比分,电竞数据分析″>
