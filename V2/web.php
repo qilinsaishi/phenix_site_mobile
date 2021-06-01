@@ -1,6 +1,6 @@
 <?php
 $config = [
-    "site_url" => "http://m.phenix.com",
+    "site_url" => "https://m.kiringames.cn",
     "site_id" => 2,
     'site_name'=>"凤凰电竞",
 ];
