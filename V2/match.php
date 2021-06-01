@@ -111,7 +111,7 @@ $return = curl_post(json_encode($params),1);
         </div>
     </div>
     <footer>
-        <a href="##" class="download">立即下载</a>
+        <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="download">立即下载</a>
     </footer>
     <script src="<?php echo $config['site_url'];?>/js/zepto.js"></script>
     <script>
