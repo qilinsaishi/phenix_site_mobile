@@ -67,10 +67,7 @@ $return = curl_post(json_encode($params),1);
         <div class="about1">
             <img src="<?php echo $config['site_url'];?>/images/yinhao.png" alt="" class="yinhao_left">
             <p class="about1_div">
-                <span class="about1_p">
-                    <img src="<?php echo $config['site_url'];?>/images/logo3.png" alt="">
-                    <i><?php echo $config['site_name'];?></i>
-                </span>
+                <img src="<?php echo $config['site_url'];?>/images/logo4.png" alt="" style="width: 1.72rem;height: .46rem;vertical-align: middle;">
                 是获得海南政府批复，以赛事竞猜系统为基础，为广大用户发布赛事信息，提供有奖竞猜的赛事服务平台
             </p>
             <img src="<?php echo $config['site_url'];?>/images/yinhao.png" alt="" class="yinhao_right">
