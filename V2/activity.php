@@ -65,6 +65,7 @@ $return = curl_post(json_encode($params),1);
         </ul>
     </header>
     <div class="activities">
+        <a href="http://efs-h5.kiringames.cn/account/charging?id=fe31d1494a53caf5d7ffac375f309e69&navber=0">
         <div class="activity">
             <div class="img">
                 <img src="<?php echo $config['site_url'];?>/images/huodong1.png" alt="" class="imgauto">
@@ -75,6 +76,7 @@ $return = curl_post(json_encode($params),1);
             </div>
             <p class="activity_p">新用户首次充值（≥100），赠送100星星币</p>
         </div>
+        </a>
     </div>
     <footer>
         <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="download">立即下载</a>
