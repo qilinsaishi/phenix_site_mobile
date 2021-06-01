@@ -970,3 +970,6 @@ border: .01rem solid #FA8E69;
     cursor: pointer;
 }
 /* 关于我们 */
+input{
+    font-size: .2rem;
+}

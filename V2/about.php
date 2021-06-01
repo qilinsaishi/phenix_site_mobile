@@ -216,7 +216,7 @@ $return = curl_post(json_encode($params),1);
         function copyText() {
             const input = document.createElement('input')
             document.body.appendChild(input)
-            input.setAttribute('value', "fenghuangdianjing")
+            input.setAttribute('value', "<?php echo $return['defaultConfig']['data']['wechat']['value'];?>")
             input.select()
             if (document.execCommand('copy')) {
                 document.execCommand('copy')
