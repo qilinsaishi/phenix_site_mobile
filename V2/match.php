@@ -87,7 +87,7 @@ $return = curl_post(json_encode($params),1);
                                     <div class="watch_match">
             <a href="##">
                 <div class="watch_match_top">
-                    <p>KPL<span class="grey">&nbsp;·&nbsp;<?php echo date("m-d H:i",strtotime($matchInfo['start_time']));?></span></p>
+                    <p><?php echo strtoupper($currentGame);?><span class="grey">&nbsp;·&nbsp;<?php echo date("m-d H:i",strtotime($matchInfo['start_time']));?></span></p>
                     <p class="<?php echo generateMatchStatus($matchInfo['start_time'])['color'];?>"><?php echo generateMatchStatus($matchInfo['start_time'])['text'];?></p>
                 </div>
                 <div class="watch_match_bot">

@@ -170,7 +170,7 @@ $return = curl_post(json_encode($params),1);
             <a href="<?php echo $return['defaultConfig']['data']['weibo_url']['value'];?>">
                 <img src="<?php echo $config['site_url'];?>/images/weibo.png" alt="微博">
             </a>
-            <a href="" onclick="copyText()" class="weixin  click show">
+            <a href="##" onclick="copyText()" class="weixin  click show">
                 <img src="<?php echo $config['site_url'];?>/images/weixin.png" alt="微信账号:<?php echo $return['defaultConfig']['data']['wechat']['value'];?>">
             </a>
             <a href="<?php echo $return['defaultConfig']['data']['baijia_url']['value'];?>">
