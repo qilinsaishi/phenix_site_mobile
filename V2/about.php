@@ -77,7 +77,7 @@ $return = curl_post(json_encode($params),1);
             <img src="<?php echo $config['site_url'];?>/images/yinhao.png" alt="" class="yinhao_left">
             <p class="about1_div">
                 <img src="<?php echo $config['site_url'];?>/images/logo4.png" alt="" style="width: 1.72rem;height: .46rem;vertical-align: middle;">
-                是获得海南政府批复，以赛事竞猜系统为基础，为广大用户发布赛事信息，提供有奖竞猜的赛事服务平台
+                是获得海南政府批复，以赛事资讯系统为基础，为广大用户发布赛事信息，提供有奖资讯的赛事服务平台
             </p>
             <img src="<?php echo $config['site_url'];?>/images/yinhao.png" alt="" class="yinhao_right">
         </div>
