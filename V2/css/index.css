@@ -576,6 +576,10 @@ border: .01rem solid #FA8E69;
 }
 .new_detail_div{
     padding: .3rem;
+	font-size: .26rem;
+	line-height: .36rem;
+    color: #454545!important;
+	font-family:'shuzi1'!important;
 }
 .new_detail_div p{
     width: 6.9rem;
@@ -583,15 +587,19 @@ border: .01rem solid #FA8E69;
     color: #454545;
     line-height: .36rem;
     margin-bottom: .2rem;
+	font-family:'shuzi1'!important;
 }
 .new_detail_div *{
     font-size: .26rem;
+	line-height: .36rem;
     color: #454545!important;
+	font-family:'shuzi1'!important;
 }
 .new_detail_div img{
-    width: 100%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
+	margin-top:.2rem;
     margin-bottom: .3rem;
 }
 /* 最新资讯详情页 */
