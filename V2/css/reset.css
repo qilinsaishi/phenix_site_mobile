@@ -58,8 +58,8 @@
         html,
         body {
             height: 100%;
-			width:7.5rem;
-			overflow-x:hidden;
+			/*width:7.5rem;
+			overflow-x:hidden;*/
         }
         @font-face {
             font-family: "shuzi";
