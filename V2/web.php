@@ -2,6 +2,7 @@
 $config = [
     "site_url" => "https://m.kiringames.cn",
     "site_id" => 2,
+	"activity_site_id" => 6,
     'site_name'=>"凤凰电竞",
     'game'=>['kpl'=>'王者荣耀','lol'=>'英雄联盟','dota2'=>'DOTA2']
 ];

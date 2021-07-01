@@ -618,13 +618,14 @@ border: .01rem solid #FA8E69;
 }
 .activity{
     width: 6.9rem;
-    height: 4.24rem;
+    /* height: 4.24rem; */
     margin:0 auto ; 
     background: #fff;
     box-shadow: 0px 0px .16rem 0px rgba(143, 23, 22, 0.05);
     border-radius: .16rem;
     margin-bottom: .3rem;
     overflow: hidden;
+	padding-bottom:.2rem;
 }
 .activity .img{
     width: 6.9rem;
@@ -664,6 +665,13 @@ border: .01rem solid #FA8E69;
     color: #666;
     /* text-align: center; */
     padding: 0 .3rem;
+	text-align:justify;
+}
+.activity_p *{
+    font-size: .26rem;
+    color: #666;
+    /* text-align: center; */
+    text-align:justify;
 }
 /* 活动 */
 /* 关于我们 */

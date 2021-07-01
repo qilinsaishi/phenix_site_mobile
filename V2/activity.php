@@ -2,6 +2,7 @@
 <?php include_once ("web.php");
 $params = [
     "defaultConfig"=>["keys"=>["ios_download_url","android_url","contact_type","contact_content","copy_text"],"fields"=>["name","key","value"],"site_id"=>$config['site_id']],
+	 "activityList"=>["page"=>1,"page_size"=>20,"site_id"=>$config['activity_site_id']]
 ];
 $return = curl_post(json_encode($params),1);
 ?>
@@ -74,18 +75,20 @@ $return = curl_post(json_encode($params),1);
         </script>
     </header>
     <div class="activities">
-        <a href="http://efs-h5.kiringames.cn/account/charging?id=fe31d1494a53caf5d7ffac375f309e69&navber=0">
+		  <?php foreach($return['activityList']['data'] as $activeInfo){?>
+        <a href="<?php echo $activeInfo['url'];?>">
         <div class="activity">
             <div class="img">
-                <img src="<?php echo $config['site_url'];?>/images/huodong1.png" alt="" class="imgauto">
+                <img src="<?php echo $activeInfo['logo'];?>" alt="<?php echo $activeInfo['title'];?>"  class="imgauto">
             </div>
             <div class="activity_div1">
-                <p>首充大礼包</p>
-                <span>2021.05.01-2021.06.30</span>
+                <p><?php echo $activeInfo['title'];?></p>
+                <span><?php echo date("Y.m.d",$activeInfo['start_time']);?>—<?php echo date("Y.m.d",$activeInfo['end_time']);?></span>
             </div>
-            <p class="activity_p">新用户首次充值（≥100），赠送100星星币</p>
+            <div class="activity_p"><?php echo html_entity_decode($activeInfo['description']);?></div>
         </div>
         </a>
+		 <?php }?>
     </div>
     <footer>
         <a href="<?php echo $return['defaultConfig']['data']['ios_download_url']['value'];?>" class="download">立即下载</a>
